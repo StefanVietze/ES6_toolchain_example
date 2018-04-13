@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/StefanVietze/ES6_toolchain_example/issues"
   },
-  "homepage": "https://github.com/StefanVietze/ES6_toolchain_example#readme"
+  "homepage": "https://github.com/StefanVietze/ES6_toolchain_example#readme",
+  "dependencies": {
+    "moment": "^2.22.0"
+  }
 }

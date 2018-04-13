@@ -27,8 +27,14 @@ To checkout most recent version use:
     * Check that browser console gives log output
     * Recognize that momentjs library is loaded from CDN
 
-    Git commit:    `e3f95e69cecf6d86a63aa5270d8c373bdd195583 `
+    Git commit:    `e3f95e69cecf6d86a63aa5270d8c373bdd195583`
 
 2. Initialize npm
     * Initialize npm by calling `npm init` in project directory.
     * Check that `package.json` is created as expected.
+
+    Git commit: `28ff738eaf217ddc6c5ac3a77926b118230ad3e1`
+
+3. Install moment.js
+    * Use `npm install moment --save` to install the library
+    * Check changes in `package.json`
