@@ -1,0 +1,23 @@
+{
+  "name": "es6_toolchain_example",
+  "version": "1.0.0",
+  "description": "Example of how to use ES6 toolchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanVietze/ES6_toolchain_example.git"
+  },
+  "keywords": [
+    "ES6",
+    "NodeJS"
+  ],
+  "author": "Vietze Stefan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StefanVietze/ES6_toolchain_example/issues"
+  },
+  "homepage": "https://github.com/StefanVietze/ES6_toolchain_example#readme"
+}
