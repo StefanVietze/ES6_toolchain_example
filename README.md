@@ -38,3 +38,9 @@ To checkout most recent version use:
 3. Install moment.js
     * Use `npm install moment --save` to install the library
     * Check changes in `package.json`
+
+    Git commit: `181ae8467f8e013c8533ab1879244500b7847497`
+
+4. Adapt index.html and check that everything stil works
+    * Change script source from CDN to local file in node_modules:
+    `<script src="node_modules/moment/min/moment.min.js"></script>`
