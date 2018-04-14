@@ -126,3 +126,18 @@ To checkout most recent version use:
         ```
     * Recognize that `npm run watch` execution does not finish, command prompt remains "waiting"
     * Change something in `index.js`, save the modified file and check that `watch` recognizes the changes automatically and rebuilds `bundle.js` automatically
+
+    Git commit: `2e1f299d372188d014a35d4a91abfbf5647a1e5b`
+
+9. Install webpack-dev-server
+    * Install `webpack-dev-server` as development dependency
+
+        `npm install webpack-dev-server --save-dev`
+
+    * Add npm task runner for webpack-dev-server to `package.json`
+
+        ```js
+        "server": "webpack-dev-server --open"
+        ```
+
+    * Check that running `npm run server` starts a local development server on port 8080.
