@@ -44,3 +44,28 @@ To checkout most recent version use:
 4. Adapt index.html and check that everything stil works
     * Change script source from CDN to local file in node_modules:
     `<script src="node_modules/moment/min/moment.min.js"></script>`
+
+    Git commit: `d1cc2de10ad8aa83ce30a005dd21248b7cff1665`
+
+5. Use webpack as module bundler to merge dependencies to single file
+    * Install webpack using `npm install webpack --save-dev`
+    * Check `package.json` to see changes
+    * Check `node_modules` folder and see what has been installed
+    * Generate `bundle.js` using: 
+
+        `./node_modules/.bin/webpack index.js -o bundle.js` 
+        
+        Bash syntax!, on Windows use "\\" instead of "/"
+
+        Command might addtionally ask to install `webpack-cli`
+
+    * Replace script references in `index.html` to refer to `bundle.js`
+    * Add `require` based import of `moment` to `index.js`:
+
+        `const moment = require('moment');`
+
+    **Additional information**
+
+    For more details about node.js module export refer to: 
+    
+    https://www.sitepoint.com/understanding-module-exports-exports-node-js/
