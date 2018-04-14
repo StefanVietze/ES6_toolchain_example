@@ -79,3 +79,31 @@ To checkout most recent version use:
     * Check `dist` folder for output of `bundle.js`
     * Change reference in `index.html` to use `bundle.js` from `dist` directory
     * Ensure that console output in browser still works
+
+    Git commit: `28569a3d75049af96cbc1cf4536d4c5700b9b870`
+
+7. Check transpilation done by babel manually
+
+    * Install babel using: `npm install babel-core babel-preset-env babel-loader babel-cli --save-dev`
+    * Check changes in `package.json`
+    * Change import of `moment` library in `index.js` to use ES6 import:
+
+        `import moment from 'moment';`
+
+    * Add ES6 template string to `index.js`
+
+        ```js
+        let name = "Bob",
+            time = "today";
+
+        console.log(`Hello ${name}, how are you ${time}?`);
+        ```
+
+    * Compile `index.js` using babel compiler manually:
+
+        `npx babel --presets env index.js --out-file index-babel-compiled.js`
+
+        **Hint**:
+        `npx` is a command line tool to run locally installed executables. You could also use a relative call to the babel executable directly (`./node_modules/.bin/babel`)
+
+    * Check generated output file `index-babel-compiled.js`
