@@ -8,4 +8,4 @@ console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
 let name = "Bob",
     time = "today";
 
-console.log(`Hello ${name}, how are you ${time}?`);
+console.log(`Hello ${name}, what are your tasks for ${time}?`);

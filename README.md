@@ -107,3 +107,22 @@ To checkout most recent version use:
         `npx` is a command line tool to run locally installed executables. You could also use a relative call to the babel executable directly (`./node_modules/.bin/babel`)
 
     * Check generated output file `index-babel-compiled.js`
+
+    Git commit: `1c4de183bde0d084db6bb7a29e0d7f4f1a2512a9`
+
+8. Add npm task runner to `package.json`
+    * Add `build` and `watch` tasks to `package.json`
+
+        ```js
+        "build": "webpack --progress -p",
+        "watch": "webpack --progress --watch"
+        ```
+
+    * Check created tasks using:
+
+        ```sh
+        npm run build
+        npm run watch
+        ```
+    * Recognize that `npm run watch` execution does not finish, command prompt remains "waiting"
+    * Change something in `index.js`, save the modified file and check that `watch` recognizes the changes automatically and rebuilds `bundle.js` automatically
