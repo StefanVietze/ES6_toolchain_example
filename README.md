@@ -69,3 +69,13 @@ To checkout most recent version use:
     For more details about node.js module export refer to: 
     
     https://www.sitepoint.com/understanding-module-exports-exports-node-js/
+
+    Git commit: `299401c95acb61409870402840c86c477c42fb5c`
+
+6. Use webpack with config file
+
+    * Add `webpack.config.js` to project
+    * Run `./node_modules/.bin/webpack`
+    * Check `dist` folder for output of `bundle.js`
+    * Change reference in `index.html` to use `bundle.js` from `dist` directory
+    * Ensure that console output in browser still works
