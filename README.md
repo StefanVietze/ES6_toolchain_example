@@ -141,3 +141,6 @@ To checkout most recent version use:
         ```
 
     * Check that running `npm run server` starts a local development server on port 8080.
+
+    Git commit: `1a4cdc7ab514d677bbed743721f4459e26c29de1`
+    
